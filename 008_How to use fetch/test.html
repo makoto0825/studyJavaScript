@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+
+</html>
+
+<script>
+    const test = async ()=>{
+        const response = await fetch('sample.json')//get the promise object
+        const data = await response.json()// get the json object
+        console.log(data.name)
+    }
+    test();
+
+    //text data
+    // const data = await response.json();//json data
+    // const text = await response.text();//text data
+    // const arrayBuffer = await response.arrayBuffer();//array buffer data
+    // const blob = await response.blob();//blob data
+    // const formData = await response.formData();//form data
+
+
+</script>
